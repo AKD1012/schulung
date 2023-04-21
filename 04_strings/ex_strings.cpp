@@ -83,7 +83,7 @@ int main()
 {
     //In this project, there are various errors with strings / char arrays - Find them, and provide better solutions for them
     //HINT: The examples will cause a Stack smash or will abort manually if data is wrong
-    assert(strExample1().compare("This is StrExample1") == 0);
+    assert(strExample1().compare("This is StrExample1!") == 0);
     
     assert(strExample2().compare("This is StrExample2!") == 0);
 
@@ -93,7 +93,7 @@ int main()
 
     assert(strExample5().compare("This is StrExample5!") == 0);
     
-    assert(strExample5().compare("This is StrExample6!") == 0);
+    assert(strExample6().compare("This is StrExample6!") == 0);
 
     std::cin.get();
 
