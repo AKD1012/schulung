@@ -66,7 +66,6 @@ std::string strExample5()
 }
 
 //Example6: Try to put the Chunks together to form the desired String.
-//Try to do it in C-Style!
 std::string strExample6()
 {
     std::string chunk1 = "This ";
@@ -79,12 +78,22 @@ std::string strExample6()
     return text;
 }
 
+const char* strExample7()
+{
+    std::string sText = "This is StrExample7!";
+    const char *text = sText.c_str();
+
+    std::cout << text << "\n";
+
+    return text;
+}
+
 int main()
 {
     //In this project, there are various errors with strings / char arrays - Find them, and provide better solutions for them
     //HINT: The examples will cause a Stack smash or will abort manually if data is wrong
     assert(strExample1().compare("This is StrExample1!") == 0);
-    
+
     assert(strExample2().compare("This is StrExample2!") == 0);
 
     assert(strExample3().compare("This is StrExample3!") == 0);
@@ -94,6 +103,8 @@ int main()
     assert(strExample5().compare("This is StrExample5!") == 0);
     
     assert(strExample6().compare("This is StrExample6!") == 0);
+
+    assert(strcmp(strExample7(), "This is StrExample7!") == 0);
 
     std::cin.get();
 
